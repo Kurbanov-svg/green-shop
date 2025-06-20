@@ -1,0 +1,185 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 0;
+}
+
+/* Верхний блок с описанием и формой */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block img {
+  width: 40px;
+  height: auto;
+}
+
+.block h1 {
+  font-size: 18px;
+  color: #222;
+}
+
+.block p {
+  font-size: 14px;
+  color: #555;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.block2 h1 {
+  font-size: 18px;
+  color: #222;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btns input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.btns button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Средний блок с контактами */
+.footer_shop {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer_shop img {
+  height: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 250px;
+}
+
+.card button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #28a745;
+}
+
+/* Нижний блок с навигацией и соцсетями */
+.last_footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box ul li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.box h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.ikons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.ikons button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.box img {
+  width: 100%;
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .btns input,
+  .btns button {
+    width: 100%;
+  }
+
+  .footer_shop {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 55px;
+  }
+
+  .block {
+    margin-left: 55px;
+  }
+
+  .block2 {
+    margin-left: 55px;
+  }
+
+  .box {
+    margin-left: 60px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .ikons {
+    justify-content: center;
+  }
+
+  .box img {
+    margin: 0 auto;
+  }
+}

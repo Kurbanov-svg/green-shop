@@ -1,0 +1,84 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.bloks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bloks button {
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex button {
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bloks button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .flex h1 {
+    font-size: 20px;
+  }
+
+  .flex p {
+    font-size: 13px;
+  }
+
+  .flex button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
